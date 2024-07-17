@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>User-Agent Changer</title>
+</head>
+<body>
+  <div class="container">
+    <img src="icon128.png" alt="User-Agent Changer Icon" class="icon" />
+    <h1>User-Agent Changer</h1>
+    <p class="description">Modifies the user-agent for your browsing experience.</p>
+    
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider"></span>
+      </label>
+      <span id="status" class="status">Disabled</span>
+    </div>
+
+    <label for="userAgentSelect">Select User-Agent:</label>
+    <select id="userAgentSelect">
+      <option value="">-- Custom --</option>
+      <option value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36">Windows 10 - Chrome</option>
+      <option value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36">Mac OS - Chrome</option>
+      <option value="Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1">iPhone - Safari</option>
+      <option value="Mozilla/5.0 (iPad; CPU OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1">iPad - Safari</option>
+      <option value="Mozilla/5.0 (Linux; Android 11; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Mobile Safari/537.36">Android - Chrome</option>
+      <option value="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0">Windows 10 - Firefox</option>
+    </select>
+
+    <div id="customUserAgent" style="margin-top: 10px;">
+      <label for="customAgent">Custom User-Agent:</label>
+      <input type="text" id="customAgent" placeholder="Enter custom User-Agent" />
+    </div>
+
+    <button id="confirmButton" class="confirm-button">Confirm and Refresh</button>
+    
+    <button id="infoButton" class="info-button">How It Works</button>
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>How User-Agent Changer Works</h2>
+        <p>This extension changes the user-agent string sent by your browser to websites.</p>
+        <p>Toggle the switch to enable or disable this feature.</p>
+      </div>
+    </div>
+
+    <p class="footer">© 2024 User-Agent Changer. All rights reserved.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
