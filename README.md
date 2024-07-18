@@ -8,6 +8,9 @@ Only Ended Based on the Manifest V3 Update, Extensions are inherently created to
 
 **Depreciated**
 
+![image](https://github.com/user-attachments/assets/06d49221-8e97-45ec-91f3-e8490c224656)
+
+
 After just one day of development, it's clear that this project is already on the path to obsolescence.
 Recent updates and security enhancements in modern browsers have rendered the ability to change **[ navigator.userAgent ]** within a browser extension unfeasible. 
 These updates are designed to prioritize user privacy and maintain browser integrity by strictly limiting extensions from altering critical properties like userAgent. While this restriction may seem overly strict, alternative methods and best practices still exist to achieve similar testing or customization goals.
