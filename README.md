@@ -20,3 +20,12 @@ Additionally, older methods that once allowed manipulation of navigator.userAgen
  development needs.
 
 In summary, this project is now obsolete and operates solely with outdated, less secure browsers. Even with these browsers, there are risks of exposing your user agent through network logs or current requests, as well as through JavaScript that could potentially grab it.
+
+Using outdated browsers can also leave you susceptible to vulnerabilities and security exploits.
+For instance, three examples of critical exploits on old browers :
+
+CVE-2021-30563 (Google Chrome): A vulnerability in Google Chrome's V8 JavaScript engine that could allow remote code execution via a specially crafted webpage.
+
+CVE-2021-33742 (Microsoft Edge): A memory corruption vulnerability in Microsoft Edge that could be exploited to execute arbitrary code.
+
+CVE-2021-30551 (Brave Browser): A vulnerability in the Brave Browser's URL handling that could allow for address bar spoofing, potentially leading to phishing attacks.
