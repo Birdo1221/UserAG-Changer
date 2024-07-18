@@ -5,11 +5,11 @@
 **Depreciated**
 
 After just one day of development, it's clear that this project is already on the path to obsolescence.
-Recent updates and security enhancements in modern browsers have rendered the ability to change [ navigator.userAgent ] within a browser extension unfeasible. 
+Recent updates and security enhancements in modern browsers have rendered the ability to change *[ navigator.userAgent ]* within a browser extension unfeasible. 
 These updates are designed to prioritize user privacy and maintain browser integrity by strictly limiting extensions from altering critical properties like userAgent. While this restriction may seem overly strict, alternative methods and best practices still exist to achieve similar testing or customization goals.
 
-However, these alternatives do come with their own set of challenges. For example, network conditions in tools like [ Chrome DevTools ], while effective for simulating different environments, cannot be programmatically controlled by extensions.
-This means automating the process of changing user agents using network conditions within an extension is not possible. Moreover, older methods that previously allowed manipulation of [ navigator.userAgent ] have been deprecated or blocked due to inherent security vulnerabilities and privacy concerns. 
+However, these alternatives do come with their own set of challenges. For example, network conditions in tools like *[ Chrome DevTools ]*, while effective for simulating different environments, cannot be programmatically controlled by extensions.
+This means automating the process of changing user agents using network conditions within an extension is not possible. Moreover, older methods that previously allowed manipulation of *[ navigator.userAgent ]* have been deprecated or blocked due to inherent security vulnerabilities and privacy concerns. 
 
 These methods typically involved injecting scripts or modifying browser settings, which could potentially expose users to tracking or security risks.
 Navigating these limitations requires adapting to new methods and exploring alternative strategies that respect browser policies and prioritize the safety of user environments.
