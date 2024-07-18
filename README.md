@@ -25,6 +25,3 @@ CVE-2021-30563 (Google Chrome): A vulnerability in Google Chrome's V8 JavaScript
 CVE-2021-33742 (Microsoft Edge): A memory corruption vulnerability in Microsoft Edge that could be exploited to execute arbitrary code.
 
 CVE-2021-30551 (Brave Browser): A vulnerability in the Brave Browser's URL handling that could enable address bar spoofing, potentially leading to phishing attacks.
-
-
-It just a warning to look out at what your doing and the versions of software that you are running.
